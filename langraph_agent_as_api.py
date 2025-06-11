@@ -603,7 +603,7 @@ if __name__ == "__main__":
         import traceback
         traceback.print_exc()
     finally:
-        print("Application (main.py FastAPI server) exiting its __main__ block.")
+        print("Application (langraph_agent_as_api.py FastAPI server) exiting its __main__ block.")
         if mongo_client:
             mongo_client.close()
             print("MongoDB client closed (extra check).")
