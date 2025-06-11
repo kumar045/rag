@@ -336,7 +336,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt: print("\nExiting...")
     except Exception as e: print(f"Unhandled main exception: {e}"); import traceback; traceback.print_exc()
     finally:
-        print("Final cleanup (app.py)...")
+        print("Final cleanup (langraph_agent.py)...")
         if mongo_client: mongo_client.close(); print("MongoDB client closed.")
-        print("Cleanup complete (app.py).")
+        print("Cleanup complete (langraph_agent.py).")
 
