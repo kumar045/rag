@@ -109,7 +109,7 @@ class InfoNoveltyGrade(BaseModel): score: str = Field(description="Is new info u
 class NoArgsPydanticModel(BaseModel): pass
 
 # --- Globals ---
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", convert_system_message_to_human=True)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", convert_system_message_to_human=True)
 MCP_SERVER_TOOLS: List[Tool] = []
 agent_executor_instance: Optional[AgentExecutor] = None
 
